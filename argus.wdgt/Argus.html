@@ -54,7 +54,8 @@ function reloadContent() {
     
 $.ajax({
   dataType: 'json',
-  url: 'http://localhost:8080/http://google.com',
+  headers: {'origin': '*','X-Requested-With': 'XMLHttpRequest'},
+  url: 'http:////localhost:8080/argus:3000/api/environments/',
   success: function () {
   
   },
