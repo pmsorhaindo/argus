@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Brandwatch Status Board</title>
+  <script src="lib/jquery-1.11.1.js"/>
+	<script src="arg.js"></script>
+	<style>
+	    @import "main.css";
+	</style>
+</head>
+ 
+  <body>
+	
+    <div id="front" style="float: left;">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>:oh img:</td>
+          <td id="title">Brandwatch Status Board</td>
+          <td>:lil image:</td>
+        </tr>
+        <tr>
+          <td style="background: #F32121;">:lil img:</td>
+          <td style="background: #F32121;">
+            <p id="content" style="padding-top: 5px; padding-bottom: 0px; margin-bottom: 0px; text-align: center;">API 1</p>
+          </td>
+          <td style="background: #535353">:NUVA IMG:</td>
+        </tr>
+        <tr>
+          <td>:lol img:</td>
+          <td style="background: #108000; text-align: center;">API2</td>
+          <td>:MOAR IMGS:</td>
+        </tr>
+      </table>
+      <div id='infoButton' onclick="showPrefs();" style="position: absolute; left: 20px; top: 20px; "></div>
+    </div>
+
+    <div id="back">
+    </div>
+    <script>
+function init(){
+  reloadContent();
+}
+
+function onshow() {
+    //reloadContent(); 
+}
+
+
+  
+
+
+// Fetch the feed
+function reloadContent() {
+
+    
+$.ajax({
+  dataType: 'json',
+  url: 'http://localhost:8080/http://google.com',
+  success: function () {
+  
+  },
+});
+
+}
+
+init();
+    </script>
+  </body>
+</html>
